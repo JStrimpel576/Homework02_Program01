@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity
         tv_j_blueValue.setText(String.valueOf(sb_j_blueSeekbar.getProgress()));
         tv_j_hexValue.setText("FFFFFF");
 
-        // Set up seekbars to properly display values as it changes
+        // Set up seekbars to display values as it changes
         redSeekbarChangeListener();
         greenSeekbarChangeListener();
         blueSeekbarChangeListener();
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity
         // Set up button to save colors
         saveColorButtonListener();
 
-        //create an OnItemClickListener to make items in the listView clickable
+        //create an OnItemClickListener, in onCreate after the color has been saved, to make items in the listView clickable
         lv_j_savedColorList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
@@ -219,8 +219,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                if (!tv_j_redValue.getText().toString().isEmpty() && !tv_j_greenValue.getText().toString().isEmpty() && !tv_j_blueValue.getText().toString().isEmpty() && !tv_j_hexValue.getText().toString().isEmpty())
-                {
                     //create ColorInfo variable to store values into the listOfColors
                     ColorInfo colorToAdd = new ColorInfo();
 
@@ -239,7 +237,6 @@ public class MainActivity extends AppCompatActivity
 
                     //refresh GUI back to default values
                     refreshGUI();
-                }
             }
         });
     }
