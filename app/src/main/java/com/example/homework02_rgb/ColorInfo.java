@@ -1,5 +1,8 @@
 package com.example.homework02_rgb;
 
+import android.view.View;
+import android.widget.RelativeLayout;
+
 public class ColorInfo
 {
     //green value, blue value, red value, and hex value
@@ -8,6 +11,9 @@ public class ColorInfo
     private int blueValue;
     private String hexValue;
 
+    //could not get background color to display in listView
+    //private int backgroundColor;
+
     //constructor
     public ColorInfo()
     {
@@ -15,12 +21,15 @@ public class ColorInfo
     }
 
     //overloaded constructor
-    public ColorInfo(int r, int g, int b, String h)
+    public ColorInfo(int r, int g, int b, String h) //int bc
     {
         redValue   = r;
         greenValue = g;
         blueValue  = b;
         hexValue   = h;
+
+        //could not get background color to display in listView
+        //backgroundColor = bc;
     }
 
     //======================
@@ -65,4 +74,13 @@ public class ColorInfo
     {
         this.hexValue = hexValue;
     }
+
+    //could not get background color to display in listView
+//    public int getBackgroundColor() {
+//        return backgroundColor;
+//    }
+//
+//    public void setBackgroundColor(int backgroundColor) {
+//        this.backgroundColor = backgroundColor;
+//    }
 }
