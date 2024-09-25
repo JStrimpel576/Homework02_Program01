@@ -6,7 +6,7 @@
    Users can use the Seekbars to change the background of the screen as well as changing the red, green, blue, and hex values. Once a user is done finding a color, the user can save the color and make a new one. At anytime, the user can click on the items in the listView and display the values of the item.
 
  3. Issues/Non-completion-
- a. I ran into two main issues while trying to record the demo
+ a. I ran into a few main issues while trying to record the demo
  - Microsoft Teams did not allow me to download the video file I recorded
  - Using stream.office.com allowed me to download the file, but the video became choppy after 30 seconds of runtime
  - I had to settle for the choppiness because using microsoft built-in video editing software, ClipChamp, made the choppiness much worse
